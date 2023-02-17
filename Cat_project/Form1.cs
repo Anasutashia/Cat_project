@@ -106,7 +106,7 @@ namespace Cat_project
                         label3.Text += karts[i].Text + " ";
                     else
                         label2.Text += karts[i].Text + " ";
-                   // label4.Text += "говно";
+                   // label4.Text += "";
             }
 
             // foreach (Control x in this.Controls)
