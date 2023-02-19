@@ -19,9 +19,9 @@ namespace Cat_project
         {
             InitializeComponent();
             label1.Font = new Font("Tobota", 14, FontStyle.Italic);
-            label2.Font = new Font("Tobota", 14, FontStyle.Italic);
-            label3.Font = new Font("Tobota", 14, FontStyle.Italic);
-            label4.Font = new Font("Tobota", 14, FontStyle.Italic);
+            label2.Font = new Font("Tobota", 12, FontStyle.Italic);
+            label3.Font = new Font("Tobota", 12, FontStyle.Italic);
+            label4.Font = new Font("Tobota", 12, FontStyle.Italic);
             label1.Text = "Времена нынче тяжелые\n хозяйка заставила оцифроваться\n и на корм зарабатывать \n хотите погадаю?  Если у Вас\n сломался компьютер,\n могу подсказать что с ним";
            
 
@@ -97,16 +97,25 @@ namespace Cat_project
                 //    textBox1.Text += " " + x.Text + Environment.NewLine;
                 if (i < 6)
                 {
-                    label4.Text += karts[i].Text + " ";
+                    label4.Text +=  karts[i].Text + " ";
                     if (i == 3)
                         label4.Text += Environment.NewLine;
                 }
                 else
                     if (i < 10)
-                        label3.Text += karts[i].Text + " ";
-                    else
-                        label2.Text += karts[i].Text + " ";
-                   // label4.Text += "";
+                {
+                    label3.Text += karts[i].Text + " ";
+                    if (i == 7)
+                        label3.Text += Environment.NewLine;
+                }
+                else
+
+                {
+                    label2.Text += karts[i].Text + " ";
+                    if (i == 13)
+                        label2.Text += Environment.NewLine;
+                }
+                // label4.Text += "";
             }
 
             // foreach (Control x in this.Controls)
