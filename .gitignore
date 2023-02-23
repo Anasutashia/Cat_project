@@ -265,6 +265,7 @@ ServiceFabricBackup/
 *.mdf
 !dbCat.mdf
 *.ldf
+!dbCat_log.ldf
 *.ndf
 
 # Business Intelligence projects
