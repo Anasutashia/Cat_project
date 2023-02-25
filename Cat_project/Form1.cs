@@ -71,15 +71,18 @@ namespace Cat_project
                        ((karts[i - 1].Sign == 5) && ((karts[i].Sign == 4) || (karts[i].Sign == 10))))
                     {
                         karts[i - 1].Text += " на";
+                        karts[i].Text = BDcom.GetSqlString("SELECT [na] FROM [dbo].[Card] where [id] =" + karts[i].Id.ToString());
                     }
                     if (((karts[i - 1].Sign == 2) && (karts[i].Sign > 2 && karts[i].Sign < 12)) ||
                        ((karts[i - 1].Sign == 5) && (karts[i].Sign > 5 && karts[i].Sign < 9)))
                     {
                         karts[i - 1].Text += " к";
+                        karts[i].Text = BDcom.GetSqlString("SELECT [k] FROM [dbo].[Card] where [id] =" + karts[i].Id.ToString());
                     }
                     if (((karts[i - 1].Sign == 3) || (karts[i - 1].Sign == 4)) && ((karts[i].Sign == 7) || (karts[i].Sign == 8)))
                     {
                         karts[i - 1].Text += " c";
+                        karts[i].Text = BDcom.GetSqlString("SELECT [s] FROM [dbo].[Card] where [id] =" + karts[i].Id.ToString());
                     }
                    // if ((karts[i - 1].Sign == 5) && (karts[i].Sign > 5 && karts[i].Sign < 9))
                    // {

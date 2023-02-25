@@ -1,1 +1,1 @@
-﻿SELECT * FROM [dbo].[Card];
+﻿UPDATE [dbo].[Card] SET [y] = N'дорогу' WHERE [Id] = 10;
